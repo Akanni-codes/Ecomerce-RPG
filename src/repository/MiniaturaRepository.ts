@@ -1,9 +1,9 @@
 import { Miniatura } from "../model/Miniatura";
 
 export interface MiniaturaRepository {
-  procurarporNumero(numero: number): void;
+  procurarporID(Id: number): void;
   listarTodas(): void;
-  cadastrar(conta: Miniatura): void;
-  atualizar(conta: Miniatura): void;
-  deletar(numero: number): void;
+  cadastrar(miniatura: Miniatura): void;
+  atualizar(miniatura: Miniatura): void;
+  deletar(Id: number): void;
 }

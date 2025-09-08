@@ -38,6 +38,6 @@ export class MiniaturaPersonagem extends Miniatura {
         break;
     }
     super.visualizar();
-    console.log("Tipo de Combatente:" + this._arquertipo);
+    console.log("Tipo de Combatente:" + arquetipo);
   }
 }

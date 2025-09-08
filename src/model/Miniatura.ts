@@ -63,17 +63,17 @@ export abstract class Miniatura {
     let tipo: string = "";
     switch (this._tipo) {
       case 1:
-        tipo = "Miniatura Personagem";
+        tipo = "Miniatura Ambientação";
         break;
 
       case 2:
-        tipo = "Miniatura Ambientação";
+        tipo = "Miniatura Personagem";
         break;
     }
     console.log("\n\n*****************************************************");
-    console.log("Dados do livro:");
+    console.log("Dados da Miniatura:");
     console.log("*****************************************************");
-    console.log("ID do Livro: " + this._Id);
+    console.log("ID da Miniatura: " + this._Id);
     console.log("Nome: " + this._nome);
     console.log("Tipo da Miniatura: " + tipo);
     console.log("Qnt em Stock: " + this._stock);

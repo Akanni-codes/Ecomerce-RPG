@@ -1,7 +1,7 @@
 import { Miniatura } from "./Miniatura";
 
 export class MiniaturaAmbiente extends Miniatura {
-  private _ambiente: number;
+  private _bioma: number;
   constructor(
     Id: number,
     tipo: number,
@@ -9,43 +9,43 @@ export class MiniaturaAmbiente extends Miniatura {
     stock: number,
     descricao: string,
     preco: number,
-    ambiente: number
+    bioma: number
   ) {
     super(Id, tipo, nome, stock, descricao, preco);
-    this._ambiente = ambiente;
+    this._bioma = bioma;
   }
 
-  public get ambiente() {
-    return this._ambiente;
+  public get bioma() {
+    return this._bioma;
   }
 
-  public set ambiente(ambiente: number) {
-    this._ambiente = ambiente;
+  public set bioma(bioma: number) {
+    this._bioma = bioma;
   }
   public visualizar(): void {
-    let ambiente: string = "";
-    switch (this._ambiente) {
+    let bioma: string = "";
+    switch (this._bioma) {
       case 1:
-        ambiente = "Deserto";
+        bioma = "Deserto";
         break;
 
       case 2:
-        ambiente = "Floresta";
+        bioma = "Floresta";
         break;
 
       case 3:
-        ambiente = "Urbano";
+        bioma = "Urbano";
         break;
 
       case 4:
-        ambiente = "Aquatico";
+        bioma = "Aquatico";
         break;
 
       case 5:
-        ambiente = "Cyberpunk";
+        bioma = "Cyberpunk";
         break;
     }
     super.visualizar();
-    console.log("Tipo de Ambiente:" + this._ambiente);
+    console.log("Tipo de bioma:" + bioma);
   }
 }
