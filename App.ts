@@ -8,7 +8,7 @@ export function main() {
   let Miniaturas: MiniaturaController = new MiniaturaController();
   let opcao, Id, tipo, stock, preco, bioma, arquetipo: number;
   let nome, descricao: string;
-  const tipoMini = ["Miniatura de Ambientação", "Miniatura de Personagem"];
+  const tipoMini = ["Miniatura de Ambiente", "Miniatura de Personagem"];
   const tipobioma = ["Deserto", "Floresta", "Urbano", "Aquatico", "Cyberpunk"];
   const tipoArquetipo = ["Corpo-a-Corpo", "Longa Distancia", "Conjurador"];
 
