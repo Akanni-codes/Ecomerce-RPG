@@ -6,7 +6,7 @@ export function main() {
   while (true) {
     console.log("*****************************************************");
     console.log("                                                     ");
-    console.log("          Bem vindo a Caverna dos Dados              ");
+    console.log("          Bem vindo a Caverna das miniaturas         ");
     console.log("                                                     ");
     console.log("*****************************************************");
     console.log("                                                     ");
